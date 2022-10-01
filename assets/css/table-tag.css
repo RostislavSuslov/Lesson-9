@@ -1,0 +1,118 @@
+.table-tags {
+    border: 1px solid var(--table-secondary-color);
+    padding: 0 12px;
+}
+
+.tags-name {
+    width: var(--table-cell-width);
+    text-align: center;
+    border-right: 1px solid var(--table-secondary-color);
+    color: var(--table-font-color);
+    border-bottom: 1px solid var(--table-secondary-color);
+    background-color: var(--table-primary-color);
+    padding: var(--table-cell-padding) 15px;
+}
+
+.tags-description  {
+    padding-top: var(--table-cell-padding);
+    padding-bottom: var(--table-cell-padding);
+    padding-left: 24px;
+    border-bottom: 1px solid var(--table-font-color);
+    width: calc(100% - var(--table-cell-width));
+    background-color: var(--table-secondary-color);
+    color: var(--table-font-color);
+}
+
+/* если меньше:
+1459px
+1199px
+991px или 1024px
+767px!
+375px
+*/
+
+/* если больше:
+1460px
+1200px
+992px или 1025px
+768px!
+*/
+
+
+@media (max-width: 1199px) {  /*если меньше*/
+    .tags-name {
+        width: var(--table-cell-width);
+        padding: var( --table-cell-netbook) 15px;
+    }
+    
+    .tags-description  {
+        padding-top: var( --table-cell-netbook);
+        padding-bottom: var( --table-cell-netbook);
+    }
+}
+
+@media (max-width: 991px) {  /*если меньше*/
+    .tags-name {
+        width: var(--table-cell-width-tablet);
+        padding: var(--table-cell-tablet) 15px;
+    }
+    
+    .tags-description  {
+        background-color: blue;
+        padding-top: var(--table-cell-tablet);
+        padding-bottom: var(--table-cell-tablet);
+        width: calc(100% - var(--table-cell-width-tablet));
+    }
+}
+
+
+@media (max-width: 767px) {  /*если меньше*/
+
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .table-tags .row {
+        flex-direction: column;
+    }
+    .tags-name,
+    .tags-description {
+        width: 100%;
+    }
+    .tags-name {
+        padding: var(--table-cell-mobile) 15px;
+    }
+    
+    .tags-description  {
+        background-color: blue;
+        padding-top: var(--table-cell-tablet);
+        padding-bottom: var(--table-cell-tablet);
+        padding-right: 15px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {  /*если больше*/
+    .tags-description  {
+        background-color: rgb(224, 162, 53);
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {  /**/
+    .page-title {
+        background: yellowgreen;
+    }   
+}

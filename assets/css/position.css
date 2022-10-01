@@ -1,0 +1,118 @@
+.position,.absolute-parent {
+    width: 200px;
+    height: 200px;
+    background: #ff0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.position.static {
+    background: #8ceb1e;
+}
+
+.position.relative {
+    position: relative;
+    left: -115px;
+    top: 55px;
+    background-color: #03a9f4;
+}
+
+
+
+ 
+.absolute-parent {
+    background: #ff5722;
+    position: relative;
+}
+
+.absolute-parent  .absolute {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: #ff0;
+    top: 120px;
+    left: 30px;
+}
+
+
+.position.fixed {
+    background-color: darkorange;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+
+
+.parent-sticky {
+    overflow-y: auto;
+    height: 450px;
+    font-size: 32px;
+    background: aquamarine;
+}
+
+ .sticky {
+    background-color: crimson;
+    color: #fff;
+    padding: 12px;
+    position: sticky;
+    top: 36px;
+}
+
+.container-overflow-x{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.container-overflow-x .example-row {
+    width: 2000px;
+    background: #9c27b0;
+}
+
+
+.table {
+    border: 2px solid #000;
+    background: #ffeb3b;
+    width: 100%;
+}
+
+
+
+.table-caption {
+    font-size: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+td {
+    font-size: 24px;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #000;
+}
+
+[id="data-table"] {
+    background-color: #00ff08;
+}
+
+#data-table {
+    background-color: #ff5722;
+}
+
+
+
+
+[rowspan="3"] {
+    background-color: #03a9f4;
+}
+
+[href="position.html"] {
+    font-size: 18px;
+    color: pink
+}
+
